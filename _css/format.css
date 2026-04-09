@@ -1,0 +1,47 @@
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+h1 {
+  color: #2c3e50;
+}
+
+h2 {
+  color: #34495e;
+}
+
+p {
+  color: #333;
+  line-height: 1.6;
+}
+
+.navbar {
+  background-color: #222;
+  padding: 10px;
+}
+
+.nav-link {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: orange;
+}
+
+.box {
+  background-color: white;
+}
+
+.highlight {
+  background-color: yellow;
+}
+
+.footer {
+  text-align: center;
+  font-size: 12px;
+  color: gray;
+}
