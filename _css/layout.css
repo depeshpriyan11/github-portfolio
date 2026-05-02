@@ -1,0 +1,67 @@
+/* ===== GLOBAL LAYOUT ===== */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ===== HEADER ===== */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== NAVIGATION ===== */
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+nav li {
+  margin: 5px 15px;
+}
+
+/* ===== MAIN LAYOUT ===== */
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  align-items: start;
+  flex: 1;
+}
+
+/* ===== TEXT POSITIONING ===== */
+main h2 {
+  grid-column: 1 / -1; /* spans full width */
+}
+
+main p {
+  grid-column: 1;
+}
+
+/* ===== IMAGE POSITIONING ===== */
+main img {
+  grid-column: 2;
+  justify-self: center;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===== EXTRA SPACING CONTROL ===== */
+header, nav, main, footer {
+  width: 100%;
+}
