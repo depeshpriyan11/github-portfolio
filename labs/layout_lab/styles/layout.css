@@ -1,0 +1,55 @@
+/* ============================= */
+/* FLEXBOX OVERALL LAYOUT        */
+/* ============================= */
+
+body {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    min-width: 850px;
+}
+
+
+/* HEADER (top full width) */
+header {
+    flex-basis: 100%;
+    order: 1;
+}
+
+
+/* NAV (LEFT SIDE) */
+nav {
+    flex: 1;
+    order: 2;
+}
+
+
+/* MAIN (RIGHT SIDE - IMPORTANT) */
+main {
+    flex: 4;
+    order: 3;
+}
+
+
+/* FOOTER (bottom full width) */
+footer {
+    flex-basis: 100%;
+    order: 4;
+}
+
+
+/* NAV LIST (safety fallback) */
+nav ul {
+    display: block;
+}
+
+
+/* ============================= */
+/* CLIENT NAV POSITIONING        */
+/* ============================= */
+
+nav#client {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
