@@ -1,46 +1,50 @@
 /* NAV HOVER */
 nav a:hover {
     background: var(--green);
-    border-radius: 5px;
-    transition: 0.3s;
+    border-radius: 6px;
 }
 
-/* CARD HOVER EFFECT (BONUS POINTS) */
+/* CARD LIFT */
 .card {
     transition: 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
 
 /* BUTTON */
-button {
+.btn {
+    display: inline-block;
     background: var(--green);
-    border: none;
-    padding: 10px 15px;
     color: white;
-    border-radius: 6px;
-    cursor: pointer;
+    padding: 12px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-button:hover {
-    transform: scale(1.05);
+.btn:hover {
+    transform: scale(1.08);
 }
 
 /* HERO ANIMATION */
 .hero {
-    animation: fadeIn 1s ease-in;
+    animation: fadeUp 0.8s ease;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* TEXT POP */
+h1, h2, h3 {
+    letter-spacing: 0.5px;
+}
+
+p {
+    line-height: 1.6;
 }
